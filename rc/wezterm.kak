@@ -68,9 +68,3 @@ define-command -override wezterm-integration-disable -docstring '
     unalias global terminal-tab wezterm-terminal-tab
     unalias global terminal-window wezterm-terminal-window
 }
-
-# declare-user-mode wezterm
-# map -docstring 'split h'    global wezterm h ': terminal-horizontal kak -c %val{session}<ret>'
-# map -docstring 'split v'    global wezterm v ': terminal-vertical kak -c %val{session}<ret>'
-# map -docstring 'new tab'    global wezterm t ': terminal-tab kak -c %val{session}<ret>'
-# map -docstring 'new window' global wezterm w ': terminal-window kak -c %val{session}<ret>'
