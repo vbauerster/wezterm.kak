@@ -8,4 +8,4 @@ Invoke `wezterm-integration-enable` command to enable integration.
 
 ## User Mode
 
-There is no default user mode provided. It's recommended to use [window.kak](https://github.com/alexherbo2/window.kak) in order to have common `window` user mode.
+There is no default user mode provided. It's recommended to use [window.kak](https://github.com/alexherbo2/window.kak) in order to have common window interface.
