@@ -19,7 +19,7 @@ define-command -override wezterm-terminal-vertical -params .. -shell-completion 
     The current pane is split into two, top and bottom
     The program passed as argument will be executed in the new terminal' \
 %{
-    wezterm cli split-pane --cwd %val{client_env_PWD} -- %arg{@}
+    wezterm cli split-pane --right --cwd %val{client_env_PWD} -- %arg{@}
 }
 
 define-command -override wezterm-terminal-tab -params .. -shell-completion -docstring '
@@ -33,7 +33,7 @@ define-command -override wezterm-terminal-window -params .. -shell-completion -d
     wezterm-terminal-window <program> [<arguments>]: create a new terminal as a WezTerm window
     The program passed as argument will be executed in the new terminal' \
 %{
-    wezterm start --cwd %val{client_env_PWD} -- %arg{@}
+    wezterm cli spawn --new-window --cwd %val{client_env_PWD} -- %arg{@}
 }
 
 define-command -override wezterm-integration-enable -params ..1 -docstring '
